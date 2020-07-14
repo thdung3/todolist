@@ -1,0 +1,66 @@
+.border-red {
+    border: 1px solid red;
+}
+body {
+    background-color: #fbbc05;
+}
+
+h1 { 
+    font-size: 50px;
+    font-weight: 700;
+    color: #364d5e
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    width: 75%;
+}
+#listToDo{
+    display: flex;
+    flex-direction: column;
+}
+#listArea{
+    display: flex;
+    justify-content: left;    
+    text-align: left;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+a:hover {
+    text-decoration: none;
+}
+#inputText {
+    margin-right: 10px;
+}
+.done-text{
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+#inputText {
+    border: 2px solid #364d5e;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+#search{
+    justify-content: center;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+#checkBox {
+    background: none;
+}

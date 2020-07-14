@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>To Do List</h1>
+        <div class="form-row">
+            <input id="inputText" type="text">
+            <button type="button" class="btn btn-primary" id="btnAdd" onclick="addToDo()">Add</button>
+        </div>
+        <div class="form-row col-md-9" id="search">
+            <div class="form-check col-md-2">
+                <input class="form-check-input" id="checkBox" type="radio" name="search" checked
+                    onclick="checkSearchAll()">
+                <label class="form-check-label">All</label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" id="checkBox" type="radio" name="search" onclick="checkSearchNotDone()">
+                <label class="form-check-label">Not Done</label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" id="checkBox" type="radio" name="search" onclick="checkSearchDone()">
+                <label class="form-check-label">Done</label>
+            </div>
+        </div>
+        <div id="listArea" class="form-group col-md-8">
+            <div id="listToDo"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
